@@ -10,8 +10,9 @@ class Layer:
     na ordem em que elas ocorrem
     '''
 
-    def __init__(self, num_of_neurons: int) -> None:
+    def __init__(self, num_of_neurons: int, activation: Operation) -> None:
         self.num_of_neurons = num_of_neurons # número de neurônios de saída
+        self.activation = activation # função de ativação dessa layer
         self.first = True
         self.params: List[ndarray] = [] # lista que armazenará os parâmetros dos operadores que forem
                                         # parametrizáveis na ordem em que os operadores aparecem
