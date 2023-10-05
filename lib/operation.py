@@ -1,5 +1,4 @@
 from numpy import ndarray
-import numpy as np
 
 class Operation(object):
     '''
