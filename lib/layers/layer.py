@@ -1,5 +1,5 @@
-from operations.operation import Operation
-from operations.param_operation import ParamOperation
+from operations import Operation
+from operations import ParamOperation
 from numpy import ndarray
 import numpy as np
 from typing import List
@@ -19,7 +19,8 @@ class Layer:
         self.param_grads: List[ndarray] = [] # lista que armazenará a derivada parcial do erro em relação
                                              # aos parâmetros dos operadores parametrizáveis na ordem em que
                                              # os operadores aparecem
-        self.operations: List[Operation] = []
+        self.operations: List[Operation] = [] # lista que armazenará as operações desse layer, em ordem de execução
+                                              # i.e. operations[0] será a primeira operação aplicada na entrada
 
     def _setup_layer(self, **kwargs):
         '''

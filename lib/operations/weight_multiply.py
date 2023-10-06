@@ -1,4 +1,4 @@
-from param_operation import ParamOperation
+from operations import ParamOperation
 from numpy import ndarray
 import numpy as np
 

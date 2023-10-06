@@ -1,5 +1,5 @@
 from numpy import ndarray
-from operation import Operation
+from operations import Operation
 import numpy as np
 
 class Sigmoid(Operation):

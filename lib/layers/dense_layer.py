@@ -1,4 +1,4 @@
-from layer import Layer
+from layers import Layer
 from numpy import ndarray
 import numpy as np
 from operations import Sigmoid, WeightMultiply, BiasAdd, Operation

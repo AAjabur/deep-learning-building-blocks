@@ -1,4 +1,4 @@
-from operation import Operation
+from operations import Operation
 from numpy import ndarray
 
 class ParamOperation(Operation):

@@ -1,4 +1,4 @@
-from param_operation import Operation
+from operations import Operation
 from numpy import ndarray
 
 class Identity(Operation):
